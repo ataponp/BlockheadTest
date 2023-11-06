@@ -1,0 +1,19 @@
+{
+  "prettier.semi": true,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+  "html.format.wrapLineLength": 120,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.format.semicolons": "insert",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true
+}
