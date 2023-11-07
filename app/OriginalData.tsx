@@ -26,11 +26,21 @@ const OriginalData = () => {
             {fields.map((field, index) => {
               return index === 0 ? (
                 <Table.RowHeaderCell key={field.id}>
-                  <input key={field.id} {...register(`original.${index}.tonne`)} defaultValue={fields[index].tonne} />
+                  <input
+                    className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    key={field.id}
+                    {...register(`original.${index}.tonne`)}
+                    defaultValue={fields[index].tonne}
+                  />
                 </Table.RowHeaderCell>
               ) : (
                 <Table.Cell key={field.id}>
-                  <input key={field.id} {...register(`original.${index}.tonne`)} defaultValue={fields[index].tonne} />
+                  <input
+                    className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    key={field.id}
+                    {...register(`original.${index}.tonne`)}
+                    defaultValue={fields[index].tonne}
+                  />
                 </Table.Cell>
               );
             })}

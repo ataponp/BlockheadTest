@@ -26,6 +26,7 @@ const ProductionDropDown = () => {
               <Table.Row key={field.id}>
                 <Table.RowHeaderCell>
                   <input
+                    className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     key={field.id}
                     {...register(`productionDropDownRule.${index}.cumulativeStart`)}
                     defaultValue={fields[index].cumulativeStart}
@@ -33,6 +34,7 @@ const ProductionDropDown = () => {
                 </Table.RowHeaderCell>
                 <Table.Cell>
                   <input
+                    className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     key={field.id}
                     {...register(`productionDropDownRule.${index}.cumulativeEnd`)}
                     defaultValue={fields[index].cumulativeEnd ?? 'Infinity'}
@@ -40,6 +42,7 @@ const ProductionDropDown = () => {
                 </Table.Cell>
                 <Table.Cell>
                   <input
+                    className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     key={field.id}
                     {...register(`productionDropDownRule.${index}.sharePercentage`)}
                     defaultValue={fields[index].sharePercentage}
